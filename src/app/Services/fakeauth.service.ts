@@ -5,5 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class FakeauthService {
 
-  constructor() { }
+  isConnected :boolean =true
+
+  login() {
+    this.isConnected = true
+  }
+  
+  logout() {
+    this.isConnected =false
+  }
+ 
+
 }
