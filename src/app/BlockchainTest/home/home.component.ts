@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FakeauthService } from '../../Services/fakeauth.service';
 @Component({
   selector: 'app-home',
   standalone: true,
