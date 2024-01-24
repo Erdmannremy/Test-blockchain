@@ -46,6 +46,7 @@ export class SignupComponent implements OnInit {
       required: true
     };
   }
+
   if (this.password.length < 6) {
     return {
       minlength: 6
