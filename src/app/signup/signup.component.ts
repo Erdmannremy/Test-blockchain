@@ -14,8 +14,46 @@ export class SignupComponent implements OnInit {
   password = '';
 
   constructor (){
-    
+
+  }
+
+  ngOnInit() {
+    this.form.valueChanges.subscribe((value) => {
+      this.isFormValid = this.form.valid;
+    });
+ }
+  
+  isFormValid() {
+    return this.isFormValid.valid;
+  } 
+   usernameValidator(){
+    if(this.username === ''){
+      return {
+        required: true
+      };
+    }
+   }
+   if (!this.email.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}/)) {
+    return {
+      email: true
+    };
   }
 
 
+   passwordValidator() 
+  if (this.password === '') {
+    return {
+      required: true
+    };
+  }
+  if (this.password.length < 6) {
+    return {
+      minlength: 6
+    };
+  }
 }
+
+
+
+
+
