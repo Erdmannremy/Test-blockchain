@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FakeauthService } from '../Services/fakeauth.service';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-authuser',

@@ -1,4 +1,4 @@
 <h3>authuser works!</h3>
 <p>Etat de connexion : {{isConnected}}</p>
-<button *ngIf="!isConnected (click)="login()">Connexion</button>
-<button *ngIf="isConnected" (click)="logout()">Déconnexion</button>
+<button *NgIf="!isConnected" (click)="login()">Connexion</button>
+<button *NgIf="isConnected" (click)="logout()">Déconnexion</button>
