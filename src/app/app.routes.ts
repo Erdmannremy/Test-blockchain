@@ -5,7 +5,7 @@ import { AuthuserComponent } from './authuser/authuser.component';
 export const routes: Routes = [
     { path : '',redirectTo: 'home',pathMatch : 'full'},
     { path : 'home',component: HomeComponent},
-    { path : 'authuser',component:AuthuserComponent},
+    { path : 'authuser',component: AuthuserComponent},
     { path : '404',component: NotfoundComponent},
     { path : '**',redirectTo: '404'},//page non trouver 404
 
