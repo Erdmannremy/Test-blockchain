@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-signup',
@@ -8,18 +9,20 @@ import { Component,OnInit } from '@angular/core';
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent implements OnInit {
-  
-  username = '';
-  email='';
-  password = '';
+  form :FormGroup;
 
-  constructor (){
+  constructor (private formGroup: FormGroup) {
+   this.form = this.formGroup.group({
+    username: new FormControl(''),
+    email: new FormControl(''),
+    password: new FormControl('')
+   });
 
   }
 
   ngOnInit() {
     this.form.valueChanges.subscribe((value) => {
-      this.isFormValid = this.form.valid;
+      this.form.valueChanges.valid;
     });
  }
   
