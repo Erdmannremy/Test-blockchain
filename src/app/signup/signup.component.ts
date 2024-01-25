@@ -55,7 +55,7 @@ export class SignupComponent implements OnInit {
       minlength: 6
     };
   }
-};
+}
 
 
 
