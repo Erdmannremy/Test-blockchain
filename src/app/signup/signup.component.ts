@@ -17,6 +17,7 @@ export class SignupComponent implements OnInit {
   this.form = new FormGroup({
     firstname: new FormControl(),
     lastname: new FormControl(),
+    age: new FormControl(),
     email: new FormControl (),
     password: new FormControl()
   });
