@@ -10,25 +10,24 @@ import { CommonModule } from '@angular/common';
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent implements OnInit {
-  form: FormGroup; 
-
- constructor() {
-  
-  this.form = new FormGroup({
-    firstname: new FormControl(),
-    lastname: new FormControl(),
-    age: new FormControl(),
-    email: new FormControl (),
-    password: new FormControl()
+   
+    form = new FormGroup({
+    firstname: new FormControl(''),
+    lastname: new FormControl(''),
+    age: new FormControl(''),
+    email: new FormControl (''),
+    password: new FormControl('')
   });
+  
+  ngOnInit(): void {
+    
   }
-  
 
- ngOnInit() {
+
   
 }
 
 
-}
+
 
 
