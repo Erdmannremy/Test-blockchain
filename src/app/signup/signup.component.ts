@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [],
+  imports: [SignupComponent],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })
@@ -19,7 +19,8 @@ export class SignupComponent implements OnInit {
     password: new FormControl('')
   });
   
-  ngOnInit(): void {
+  
+  ngOnInit(){
     
   }
 
