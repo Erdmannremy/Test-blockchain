@@ -3,7 +3,7 @@ import { SignupComponent } from '../../signup/signup.component';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [SignupComponent],
+  imports: [NavbarComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
