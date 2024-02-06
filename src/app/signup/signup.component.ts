@@ -1,11 +1,12 @@
 import { Component,OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import { RouterLink } from '@angular/router'; 
+import { NavbarComponent } from '../navbar/navbar/navbar.component';
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [SignupComponent],
+  imports: [NavbarComponent, RouterLink, CommonModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })
